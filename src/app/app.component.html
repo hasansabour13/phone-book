@@ -1,0 +1,34 @@
+<div class="container">
+<table>
+  <thead>
+    <tr>
+      <th>شماره</th>
+      <th>نام </th>
+      <th>نام خانوادگی</th>
+      <th>شماره تماس</th>
+      <th>توضیحات</th>
+      <th>حذف</th>
+    </tr>
+
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let contact of contacts; let i = index">
+      <td>{{i+1}}</td>
+      <td>{{ contact.firstName }}</td>
+      <td>{{ contact.lastName }}</td>
+      <td>{{ contact.phoneNumber }}</td>
+      <td>{{ contact.description }}</td>
+      <td class="action-column">
+        <button mat-icon-button (click)="removeContact(i)">
+          <mat-icon>close</mat-icon> <!-- آیکون ضربدر -->
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<button class="btn" mat-button (click)="openDialog()">اضافه کردن به لیست</button>
+</div>
+
+<router-outlet />

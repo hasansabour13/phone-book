@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>لطفا فرم زیر را تکمیل کنید</h2>
+<mat-dialog-content>
+
+  <div>
+    <form>
+      نام<input type="text"  [(ngModel)]="contact.firstName"  name="name" >
+      نام خانوادگی<input type="text" [(ngModel)]="contact.lastName" name="lastName">
+      شماره تماس<input type="tel" [(ngModel)]="contact.phoneNumber" name="phoneNumber">
+      توضیحات <input type="text" [(ngModel)]="contact.description" name="description">
+      <button  class="btn2" (click)="submit()">ارسال</button>
+    </form>
+
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>بستن</button>
+</mat-dialog-actions>

@@ -1,0 +1,23 @@
+h2{
+  text-align: center;
+}
+form{
+  text-align: right;
+  direction: rtl;
+}
+input{
+  width: 100%;
+  text-align: right;
+  direction: rtl;
+}
+
+.btn2{
+  background-color: #4CAF50;
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+  margin-top: 6px;
+ 
+}
